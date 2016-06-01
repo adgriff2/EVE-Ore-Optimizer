@@ -1,0 +1,9 @@
+C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Release\EVE Ore Optimizer.exe.config
+C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Release\EVE Ore Optimizer.exe
+C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Release\EVE Ore Optimizer.pdb
+C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Release\Google.OrTools.dll
+C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Release\EVE_Ore_Optimizer.Form1.resources
+C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Release\EVE_Ore_Optimizer.Properties.Resources.resources
+C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Release\EVE Ore Optimizer.csproj.GenerateResource.Cache
+C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Release\EVE Ore Optimizer.exe
+C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Release\EVE Ore Optimizer.pdb
