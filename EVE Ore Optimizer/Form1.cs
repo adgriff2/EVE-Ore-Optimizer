@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.OrTools.LinearSolver;
+using System.Data.SQLite;
 
 namespace EVE_Ore_Optimizer
 {
     public partial class Form1 : Form
     {
-
+        SQLiteConnection m_dbConnection;
+        List<ManufacturableItem> items;
+        List<TypeMaterials> typeMaterialsList;
         public Form1()
         {
             InitializeComponent();
@@ -21,6 +24,57 @@ namespace EVE_Ore_Optimizer
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            m_dbConnection = new SQLiteConnection("Data Source=BPO_Mats.db;Version=3;");
+            m_dbConnection.Open();
+            string sql = "select typeID,materialTypeID,quantity from invTypeMaterials";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+            typeMaterialsList = new List<TypeMaterials>();
+            while (reader.Read())
+            {
+                typeMaterialsList.Add(new TypeMaterials(
+                    (long)reader["typeID"],
+                    (long)reader["materialTypeID"],
+                    (long)reader["quantity"]));
+            }
+
+            List<long> manufacturableTypeIDs = typeMaterialsList.GroupBy(x => x.typeID).Select(y => y.First()).Select(z => z.typeID).ToList(); ;
+            List<KeyValuePair<long, string>> Names = new List<KeyValuePair<long, string>>();
+            sql = "select typeID,typeName from invTypes";
+            command = new SQLiteCommand(sql, m_dbConnection);
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                Names.Add(new KeyValuePair<long, string>(
+                    (long)reader["typeID"],
+                    (string)reader["typeName"]
+                    ));
+            }
+
+            items = new List<ManufacturableItem>();
+            List<long> mineralTypes = new List<long> { 11396, 34, 35, 36, 37, 38, 39, 40 };
+            comboBox17.Items.Clear();
+            foreach (long typeID in manufacturableTypeIDs)
+            {
+                if (!Names.Any(x => x.Key == typeID)) { continue; }
+                List<long> m_typeIDs = typeMaterialsList.FindAll(x => x.typeID == typeID).Select(y => y.materialTypeID).ToList();
+                List<long> m_Qtys = typeMaterialsList.FindAll(x => x.typeID == typeID).Select(y => y.quantity).ToList();
+
+                Dictionary<long, long> dic = m_typeIDs.Zip(m_Qtys, (k, v) => new { k, v }).ToDictionary(x => x.k, x => x.v);
+                string name = Names.First(x => x.Key == typeID).Value;
+                if (!m_typeIDs.Except(mineralTypes).Any())
+                {
+                    items.Add(new ManufacturableItem(
+                        typeID,
+                        name,
+                        dic));
+                    
+                    comboBox17.Items.Add(name);
+                }
+            }
+
+
+
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
             comboBox3.SelectedIndex = 0;
@@ -417,6 +471,55 @@ namespace EVE_Ore_Optimizer
 
             label37.Text = cost.ToString("N2");
             label38.Text = volume.ToString("N2");
+        }
+
+        private void comboBox17_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textBox24.Text = "0";
+            textBox23.Text = "0";
+            textBox22.Text = "0";
+            textBox21.Text = "0";
+            textBox20.Text = "0";
+            textBox19.Text = "0";
+            textBox18.Text = "0";
+            textBox17.Text = "0";
+
+            string name = comboBox17.SelectedItem.ToString();
+
+            Dictionary<long, long> temp = items.First(x => x.name == name).mats;
+
+            if (temp.ContainsKey(34))
+            {
+                textBox24.Text = temp[34].ToString();
+            }
+            if (temp.ContainsKey(35))
+            {
+                textBox23.Text = temp[35].ToString();
+            }
+            if (temp.ContainsKey(36))
+            {
+                textBox22.Text = temp[36].ToString();
+            }
+            if (temp.ContainsKey(37))
+            {
+                textBox21.Text = temp[37].ToString();
+            }
+            if (temp.ContainsKey(38))
+            {
+                textBox20.Text = temp[38].ToString();
+            }
+            if (temp.ContainsKey(39))
+            {
+                textBox19.Text = temp[39].ToString();
+            }
+            if (temp.ContainsKey(40))
+            {
+                textBox18.Text = temp[40].ToString();
+            }
+            if (temp.ContainsKey(11396))
+            {
+                textBox17.Text = temp[11396].ToString();
+            }
         }
     }
 }

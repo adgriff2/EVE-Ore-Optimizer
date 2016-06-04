@@ -1,10 +1,18 @@
-c:\users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EVE Ore Optimizer.exe.config
-C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE Ore Optimizer.csprojResolveAssemblyReference.cache
-C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE_Ore_Optimizer.Form1.resources
-C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE_Ore_Optimizer.Properties.Resources.resources
-C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE Ore Optimizer.csproj.GenerateResource.Cache
-C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EVE Ore Optimizer.exe
-C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EVE Ore Optimizer.pdb
-C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE Ore Optimizer.exe
-C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE Ore Optimizer.pdb
-C:\Users\adgri\Documents\Visual Studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\Google.OrTools.dll
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EVE Ore Optimizer.exe.config
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EVE Ore Optimizer.exe
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EVE Ore Optimizer.pdb
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EntityFramework.dll
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\Google.OrTools.dll
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\System.Data.SQLite.dll
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EntityFramework.xml
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\bin\Debug\System.Data.SQLite.xml
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE_Ore_Optimizer.Form1.resources
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE_Ore_Optimizer.Properties.Resources.resources
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE Ore Optimizer.csproj.GenerateResource.Cache
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE Ore Optimizer.exe
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE Ore Optimizer.pdb
+C:\Users\adgri\documents\visual studio 2015\Projects\EVE Ore Optimizer\EVE Ore Optimizer\obj\Debug\EVE Ore Optimizer.csprojResolveAssemblyReference.cache
